@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+.accordions{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.accordion{
+    width: 65%;
+    color: #fff;
+    overflow: hidden;
+    background-color: #ACACAC;
+}
+.accordionLabel{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 1em;
+    background: #0E9E2C;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Nunito';
+}
+.accordion:first-child{ border-bottom: 1px solid #0b0b0b;}
+.accordion:nth-child(2){ border-bottom: 1px solid #0b0b0b;}
+.accordionLabel:hover{ background: #1BC23E;}
+.accordionLabel::after{
+    content: '>';
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transition: all 0.7s ease-in;
+    font-size: 2em;
+}
+.content{
+    max-height: 0;
+    padding: 0 1em;
+    color: #0b0b0b;
+    background: transparent;
+    transition: all 0.7s ease-out;
+}
+input{
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+input:checked + .accordionLabel::after{ transform: rotate(90deg);}
+input:checked ~ .content {
+    max-height: 100vh;
+    padding: 1em;
+}
