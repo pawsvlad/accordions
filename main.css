@@ -13,7 +13,6 @@
     justify-content: center;
 }
 .accordions{
-    border-radius: 10px;
     overflow: hidden;
 }
 .accordion{
@@ -27,14 +26,14 @@
     justify-content: center;
     justify-content: space-between;
     padding: 1em;
-    background: #0E9E2C;
+    background: #4c76e2;
     font-weight: 700;
     cursor: pointer;
     font-family: 'Nunito';
 }
-.accordion:first-child{ border-bottom: 1px solid #0b0b0b;}
-.accordion:nth-child(2){ border-bottom: 1px solid #0b0b0b;}
-.accordionLabel:hover{ background: #1BC23E;}
+.accordion:first-child{ border-bottom: 1px ;}
+
+.accordionLabel:hover{ background: #1b65a7;}
 .accordionLabel::after{
     content: '>';
     width: 1em;
