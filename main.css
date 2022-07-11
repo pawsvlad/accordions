@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -41,7 +42,7 @@
     text-align: center;
     transition: all 0.5s ease;
     font-size: 2em;
-    color: rgb(238, 48, 48);
+    color: red;
 }
 .content{
     max-height: 0;
@@ -59,4 +60,5 @@ input:checked + .accordionLabel::after{ transform: rotate(90deg);}
 input:checked ~ .content {
     max-height: 100vh;
     padding: 1em;
+
 }
