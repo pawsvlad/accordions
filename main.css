@@ -39,15 +39,16 @@
     width: 1em;
     height: 1em;
     text-align: center;
-    transition: all 0.7s ease-in;
+    transition: all 0.5s ease;
     font-size: 2em;
+    color: red;
 }
 .content{
     max-height: 0;
     padding: 0 1em;
     color: #0b0b0b;
     background: transparent;
-    transition: all 0.7s ease-out;
+    transition: all 0.5s ease;
 }
 input{
     position: absolute;
